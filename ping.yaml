@@ -1,7 +1,0 @@
-- name: Install Apache
-  hosts: all
-  tasks:
-    - name: Example from an Ansible Playbook
-      ansible.builtin.ping:
-        become: true
-        become_user: khatrivarun_dev
