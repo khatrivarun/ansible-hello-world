@@ -1,5 +1,5 @@
 - name: Install Apache
-  hosts: ansible-node
+  hosts: all
   tasks:
     - name: Install the latest version of Apache
       ansible.builtin.yum:
