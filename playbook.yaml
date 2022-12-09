@@ -1,14 +1,14 @@
-- name: Install Apache
+- name: Install NGINX
   hosts: all
   tasks:
-    - name: Install the latest version of Apache
-      ansible.builtin.yum:
-        name: httpd
-        state: latest
+    - name: Install the latest version of NGINX
+      ansible.builtin.apt:
+        name: nginx
+        state: present
       become: true
 
-    - name: Start Apache service
+    - name: Start NGINX service
       ansible.builtin.service:
-        name: httpd
+        name: nginx
         state: started
       become: true
