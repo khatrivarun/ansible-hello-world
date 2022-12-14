@@ -1,5 +1,5 @@
 - name: Install NGINX
-  hosts: nodes
+  hosts: nodes-unconfigured
   tasks:
     - name: Install the latest version of NGINX
       ansible.builtin.apt:
