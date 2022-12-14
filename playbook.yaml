@@ -1,5 +1,5 @@
 - name: Install NGINX
-  hosts: nodes
+  hosts: nodes-online
   tasks:
     - name: Install the latest version of NGINX
       ansible.builtin.apt:
@@ -18,4 +18,4 @@
   tasks:
     - name: Check for 200
       ansible.builtin.uri:
-        url: http://{{ host }}
+        url: http://{{ public_host }}
