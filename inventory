@@ -2,5 +2,4 @@
 ansible-engine ansible_connection=local
 
 [nodes]
-node-one ansible_host=35.200.136.153
-node-two ansible_host=35.200.176.239
+node-one ansible_host=34.100.231.33
